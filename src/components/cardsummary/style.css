@@ -7,6 +7,12 @@
   color: black;
 }
 
+.card a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
 .top img {
   width: 100%;
 }

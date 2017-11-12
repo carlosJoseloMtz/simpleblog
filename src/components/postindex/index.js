@@ -4,18 +4,21 @@ import CardSummary from '../cardsummary'
 
 const MOCKED_POSTS = [
 	{
+		id: 'someid1',
 		title: 'Some awesome story',
 		summary: 'how I am wasting my time with this, but also loving it! :D',
 		author: 'Juanito Perech',
 		postedAt: 'Nov 12 2017'
 	},
 	{
+		id: 'someid2',
 		title: 'More awesome stuff here!! :D',
 		summary: 'how I am wasting my time with this, but also loving it! :D',
 		author: 'Caloch Matinech',
 		postedAt: 'Nov 12 2017'
 	},
 	{
+		id: 'someid3',
 		title: 'Even more awesomeness',
 		summary: 'how I am wasting my time with this, but also loving it! :D',
 		author: 'Somebody elseee',
@@ -43,9 +46,6 @@ export default class PostIndex extends Component {
 
 		return (
       <div>
-      hello :)
-
-      <br />
 				<div class={style.layer}>
 					{
 						posts.map(post => {
