@@ -1,0 +1,20 @@
+.layer {
+  display: block;
+}
+
+.latest:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .layer {
+
+  }
+
+  .latest {
+  }
+
+  .latest:not(:first-child):not(:last-child) {
+    /* margin: 0 10px; */
+  }
+}

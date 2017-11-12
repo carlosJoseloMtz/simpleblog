@@ -1,4 +1,8 @@
-# {{ name }}
+# simpleblog
+
+A simple blog engine using nodejs and preact
+
+Hopefully will be a PWA blog so that it can be focused also on the mobile reader
 
 ## CLI Commands
 
