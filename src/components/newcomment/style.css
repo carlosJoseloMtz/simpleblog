@@ -1,0 +1,39 @@
+.new textarea {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.new textarea:focus {
+  border-color: #03A9F4;
+}
+
+.new input {
+  width: 100%;
+  margin: 17px 0;
+  border-radius: 4px;
+  border-width: 0.5px;
+  padding: 10px;
+}
+
+.new input:focus {
+  border-color: #03A9F4;
+}
+
+.btn {
+  border: none;
+  background-color: #0288D1;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #0277BD;
+}
+
+.btn:active {
+  background-color: #039BE5;
+}

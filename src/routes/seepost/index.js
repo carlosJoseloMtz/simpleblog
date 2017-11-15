@@ -1,6 +1,7 @@
 import { h, Component } from 'preact'
 import style from './style'
 import { getPostById } from '../../lib/postservice.js'
+import Comments from '../../components/comments'
 
 export default class SeePost extends Component {
   state = {
@@ -31,13 +32,16 @@ export default class SeePost extends Component {
   }
 
   getPostContent (post) {
-    console.log(post)
     return <div>
         <h1>{post.title}</h1>
         <br />
         {post.content}
         <br />
         {post.author.name}
+        <br />
+        <hr />
+        <br />
+        <Comments postId={post.id} />
       </div>
   }
 
@@ -54,6 +58,6 @@ export default class SeePost extends Component {
       content = this.getPostContent(post)
     }
 
-    return content
+    return <div class={style.wrapper}>{content}</div>
   }
 }
