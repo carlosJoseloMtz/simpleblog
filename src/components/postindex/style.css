@@ -8,10 +8,12 @@
 
 @media (min-width: 768px) {
   .layer {
-
   }
 
   .latest {
+    display: inline-block;
+    width: 40%;
+    margin: 0 20px;
   }
 
   .latest:not(:first-child):not(:last-child) {
