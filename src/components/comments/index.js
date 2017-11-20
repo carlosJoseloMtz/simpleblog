@@ -7,23 +7,28 @@ import { postComment } from '../../lib/commentservice.js'
 const COMMENTS = [
   {
     author: 'Someone',
-    comment: 'some comment very nice'
+    comment: 'some comment very nice',
+    date: new Date()
   },
   {
     author: 'Someone',
-    comment: 'some comment very nice'
+    comment: 'some comment very nice',
+    date: new Date()
   },
   {
     author: 'Someone',
-    comment: 'some comment very nice'
+    comment: 'some comment very nice',
+    date: new Date()
   },
   {
     author: 'Someone',
-    comment: 'some comment very nice'
+    comment: 'some comment very nice',
+    date: new Date()
   },
   {
     author: 'Someone',
-    comment: 'some comment very nice'
+    comment: 'some comment very nice',
+    date: new Date()
   }
 ]
 

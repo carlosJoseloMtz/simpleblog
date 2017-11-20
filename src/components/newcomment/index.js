@@ -35,10 +35,13 @@ export default class NewComment extends Component {
     }
 
     if (onCreateComment) {
-      onCreateComment({
+      const newComment = {
         author: this.state.author,
-        comment: this.state.comment
-      })
+        comment: this.state.comment,
+        date: new Date()
+      }
+
+      onCreateComment(newComment)
     }
 
     this.restartComment()

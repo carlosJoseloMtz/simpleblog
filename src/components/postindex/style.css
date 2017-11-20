@@ -13,10 +13,10 @@
   .latest {
     display: inline-block;
     width: 40%;
-    margin: 0 20px;
   }
 
   .latest:not(:first-child):not(:last-child) {
-    /* margin: 0 10px; */
+    margin: 0 10px;
   }
 }
+

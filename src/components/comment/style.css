@@ -1,4 +1,9 @@
 .comment {
-	border-bottom: 1px solid black;
-	padding: 17px 10px;
+    border-bottom: 1px solid black;
+    padding: 27px 10px;
+    color: #212121;
+}
+
+.comment .author {
+    color: #616161;
 }
