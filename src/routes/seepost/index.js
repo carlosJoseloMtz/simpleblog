@@ -1,6 +1,7 @@
 import { h, Component } from 'preact'
 import style from './style'
 import { getPostById } from '../../lib/postservice.js'
+import {formatDate } from '../../lib/utils.js'
 import Comments from '../../components/comments'
 
 export default class SeePost extends Component {
@@ -34,10 +35,11 @@ export default class SeePost extends Component {
   getPostContent (post) {
     return <div>
         <h1>{post.title}</h1>
+        <div class={style.author}>
+            <a href={'/profile/' + post.author.id}>{post.author.name}</a> - {post.postedAt}
+        </div>
         <br />
         {post.content}
-        <br />
-        {post.author.name}
         <br />
         <hr />
         <br />
