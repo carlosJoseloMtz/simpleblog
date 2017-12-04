@@ -25,7 +25,6 @@ export default class App extends Component {
 				<div id="page">
 					<Router onChange={this.handleRoute}>
 						<Home path="/" />
-						<Profile path="/profile/" user="me" />
 						<Profile path="/profile/:user" />
 						<SeePost path="/posts/:postId" />
 					</Router>

@@ -7,16 +7,44 @@
 }
 
 @media (min-width: 768px) {
+
   .layer {
+    margin: 0 auto;
   }
 
   .latest {
+    margin: 0;
     display: inline-block;
-    width: 40%;
+    width: 47%;
   }
 
-  .latest:not(:first-child):not(:last-child) {
-    margin: 0 10px;
+  .latest:nth-child(odd) {
+    margin-right: 26px;
+  }
+
+  .latest:nth-child(even) {
+    margin-left: 26px;
   }
 }
 
+@media (min-width: 992px) {
+
+  .layer {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .latest {
+    width: 40%;
+    margin: 0px auto !important;
+    display: inline-block;
+  }
+
+  .latest:nth-child(odd) {
+    margin-right: 5px;
+  }
+
+  .latest:nth-child(even) {
+    margin-left: 5px;
+  }
+}

@@ -1,38 +1,32 @@
 .header {
-	width: 100%;
-	height: 56px;
-	padding: 0;
 	background: #009688;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 2px 5px rgba(0,0,0,.26);
 	z-index: 50;
+	width: 100%;
+	line-height: 2em;
 }
 
-.header h1 {
-	float: left;
-	margin: 0;
-	padding: 0 15px;
-	font-size: 24px;
-	line-height: 56px;
-	font-weight: 400;
+.header .title {
 	color: #FFF;
+	margin: 0px;
+	padding: 20px;
+	font-weight: bold;
+	font-size: 1.37em;
+	display: inline-block;
 }
 
 .header nav {
-	float: right;
-	font-size: 100%;
+	display: inline-block;
+	vertical-align: baseline;
 }
 
 .header nav a {
-	display: inline-block;
-	height: 56px;
-	line-height: 56px;
-	padding: 0 15px;
-	min-width: 50px;
-	text-align: center;
 	background: rgba(255,255,255,0);
 	text-decoration: none;
 	color: #FFF;
 	will-change: background-color;
+	display: block;
+	padding: 20px;
 }
 
 .header nav a:hover,
