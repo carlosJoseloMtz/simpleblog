@@ -1,0 +1,25 @@
+.post-summary {
+    box-shadow: 0 2px 5px rgba(0,0,0,.26);
+    padding: 10px 20px;
+    text-align: justify;
+    margin-bottom: 7px;
+}
+
+.post-summary a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-summary:hover {
+    box-shadow: 0 2px 15px rgba(0,0,0,.26);
+}
+
+.post-summary .author {
+    color: #424242;
+    font-weight: 200;
+}
+
+.post-summary .author a {
+    color: #212121;
+    font-weight: 700;
+}

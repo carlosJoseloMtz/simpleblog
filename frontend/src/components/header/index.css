@@ -1,0 +1,27 @@
+header {
+    background-color: #1E88E5;
+    color: white;
+}
+
+header ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+header ul li {
+    display: block;
+}
+
+
+header a {
+    display: block;
+    padding: 13px 27px;
+    text-decoration: none;
+    color: inherit;
+}
+
+header a:hover {
+    background-color: #42A5F5;
+    color: #212121;
+}

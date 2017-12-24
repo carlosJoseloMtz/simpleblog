@@ -1,0 +1,21 @@
+.new-post-form textarea {
+    margin: 10px 0;
+}
+
+@media (min-width: 992px) {
+
+    .new-post-form {
+        display: flex;
+    }
+
+    .new-post-form .preview,
+    .new-post-form .creative {
+        flex: 1;
+    }
+
+    .new-post-form .preview {
+        margin-left: 60px;
+    }
+
+}
+

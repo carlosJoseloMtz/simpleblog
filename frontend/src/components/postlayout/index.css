@@ -1,0 +1,20 @@
+.post-layout {
+    margin: 27px 0;
+}
+
+@media(min-width: 768px) {
+    .post-layout {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .post-layout .post-summary {
+        width: 40%;
+        margin-bottom: 13px;
+    }
+
+    .post-layout .post-summary:nth-child(odd) {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+}

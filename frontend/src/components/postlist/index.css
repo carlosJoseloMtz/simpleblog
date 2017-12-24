@@ -1,0 +1,9 @@
+.post-list ul {
+    padding: 0;
+    margin: 27px 0;
+}
+
+
+.post-list li {
+    display: block;
+}

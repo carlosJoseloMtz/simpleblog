@@ -1,0 +1,13 @@
+
+.post .author {
+    color: #424242;
+    font-weight: 200;
+    margin: 20px 0;
+}
+
+.post a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #212121;
+}
+
