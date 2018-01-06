@@ -9,6 +9,8 @@ consign({
     verbose: true
   })
   .include('app/config.js')
+  .then('models')
+  .include('services/index.js')
   .then('routes')
   .include('app/bootloader.js')
   .into(app)
