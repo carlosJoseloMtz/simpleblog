@@ -1,9 +1,12 @@
 import mongoose from 'mongoose'
 import serviceLoader from '../services/loader'
+import cors from 'cors'
 
 module.exports = app => {
 
   const dbConn = app.get('dbConn')
+
+  app.use(cors())
 
   mongoose.connect(dbConn)
   .then(_ => {

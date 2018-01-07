@@ -1,0 +1,11 @@
+
+.alert {
+  padding: 17px 20px;
+  border-radius: 7px;
+  background-color: #009688;
+  color: white;
+  border: 1.2px solid #00796B;
+}
+
+/* TODO: Implement the rest of the alert types here,
+  and make the one above prettier!! */
