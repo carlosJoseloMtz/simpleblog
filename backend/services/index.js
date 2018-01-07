@@ -5,5 +5,6 @@
 module.exports = {
   userService: null,
   authService: null,
-  utils: null
+  utils: null,
+  postService: null
 }

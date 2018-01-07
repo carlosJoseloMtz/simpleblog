@@ -1,4 +1,5 @@
 import UserSchema from '../models/schemas/userschema'
+import { mapId } from './mappers/objectmapper'
 
 class UserService {
 
@@ -33,9 +34,7 @@ class UserService {
     })
 
     return nuser.save()
-      .then(created => {
-        return created.id
-      })
+      .then(mapId)
   }
 }
 

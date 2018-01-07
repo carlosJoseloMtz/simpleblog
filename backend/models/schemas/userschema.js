@@ -33,7 +33,6 @@ const UserSchema = new Schema({
 
   lastEdition: {
     type: Date,
-    default: Date.now,
     required: true
   }
 })

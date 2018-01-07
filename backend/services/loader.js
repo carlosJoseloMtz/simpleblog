@@ -1,5 +1,6 @@
 import UserService from './userservice'
 import AuthService from './authservice'
+import PostService from './postservice'
 import utils from './utils'
 import serviceIndex from './index'
 
@@ -14,7 +15,11 @@ module.exports = app => {
   const userService = new UserService()
   userService.authService = authService
 
+  const postService = new PostService()
+
   serviceIndex.userService = userService
+  serviceIndex.postService = postService
   serviceIndex.authService = authService
   serviceIndex.utils = utils
+
 }
