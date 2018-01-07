@@ -3,6 +3,11 @@ import { mapId } from './mappers/objectmapper'
 
 class PostService {
 
+  getIndex ({ page }) {
+    // TODO: define the limit from the app's config file!!
+    return PostSchema.paginate({}, { page, limit: 6, sort: '-creationDate' })
+  }
+
   createPost ({ title, summary, post, user }) {
     const newPost = new PostSchema({
       title,

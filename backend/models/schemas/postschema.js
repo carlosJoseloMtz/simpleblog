@@ -1,4 +1,5 @@
 import mongoose, { Schema } from 'mongoose'
+import pagination from 'mongoose-paginate'
 
 const PostSchema = new Schema({
 
@@ -37,6 +38,8 @@ const PostSchema = new Schema({
 
   tags: [{ name: String }]
 })
+
+PostSchema.plugin(pagination)
 
 PostSchema.pre('save', function (next) {
   this.lastEdition = Date.now()

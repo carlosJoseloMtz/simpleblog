@@ -1,6 +1,23 @@
 import { postService, utils } from '../services'
 
 module.exports = app => {
+
+  app.get('/posts/index/:page', (req, res) => {
+    postService.getIndex({ page: req.params.page || 1 })
+      .then(posts => {
+        res.json(posts)
+      })
+      .catch(err => {
+        console.error('Error while fetching the posts', err)
+
+        res.status(500).json({
+          error: true,
+          message: 'Error while trying to get the posts',
+          trace: err
+        })
+      })
+  })
+
   app.post('/posts', (req, res) => {
 
     // TODO: get the user from the JWT being sent from the client
