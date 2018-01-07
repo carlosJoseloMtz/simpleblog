@@ -26,6 +26,7 @@ module.exports = app => {
       })
     })
     .catch(err => {
+      console.error('Error while trying to create the user? D:', err)
       res.status(500).json({
         error: true,
         message: 'error while trying to create the user',
@@ -51,6 +52,8 @@ module.exports = app => {
         res.json(user)
       })
       .catch(err => {
+        console.error('Error while trying to login', err)
+
         res.status(500).json({
           error: true,
           message: 'Error while trying to login',

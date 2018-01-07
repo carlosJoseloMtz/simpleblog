@@ -1,4 +1,5 @@
 import mongoose from 'mongoose'
+import serviceLoader from '../services/loader'
 
 module.exports = app => {
 
@@ -17,4 +18,5 @@ module.exports = app => {
     console.log(`Server's running on http://localhost:${port}`)
   })
 
+  serviceLoader(app)
 }

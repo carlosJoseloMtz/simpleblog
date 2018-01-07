@@ -2,6 +2,10 @@ import UserSchema from '../models/schemas/userschema'
 
 class UserService {
 
+  constructor () {
+    this.authService = null
+  }
+
   login (username, password) {
     return UserSchema
       .findOne({ username })
@@ -10,8 +14,14 @@ class UserService {
           throw 'User not found!'
         }
 
-        // TODO: remove password from response
-        return user
+        return {
+          user: {
+            username: user.username,
+            name: user.name,
+            id: user.id
+          },
+          token: this.authService.encode(user)
+        }
       })
   }
 

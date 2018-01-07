@@ -8,6 +8,13 @@ const UserSchema = new Schema({
     required: true
   },
 
+  group: {
+    type: String,
+    enum: ['admin', 'author', 'subscriptor'],
+    default: 'author',
+    required: true
+  },
+
   password: {
     type: String,
     required: true
@@ -25,13 +32,13 @@ const UserSchema = new Schema({
   },
 
   lastEdition: {
-    type: date,
+    type: Date,
     default: Date.now,
     required: true
   }
 })
 
-UserSchema.pre('save', next => {
+UserSchema.pre('save', function (next) {
   this.lastEdition = Date.now()
 
   next()
